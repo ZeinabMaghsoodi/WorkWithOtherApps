@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/innerLayoutBackground"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@color/imageViewBackground" />
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/btnTakePhotoText"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutPhoto"
+        android:id="@+id/layoutLocation"
+        android:gravity="center_horizontal"
+        android:background="@color/innerLayoutBackground"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/txtLocationText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnTurnLocation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:text="@string/btnTurnLocationText"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutWifi"
+        android:layout_below="@+id/layoutLocation"
+        android:gravity="center_horizontal"
+        android:background="@color/innerLayoutBackground"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtWifi"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/txtWifiText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnTurnWifi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:text="@string/btnTurnWifiText"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutWifi"
+        android:gravity="center_horizontal"
+        android:background="@color/innerLayoutBackground"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtBluetooth"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/txtBluetoothText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnTurnBluetooth"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:text="@string/btnTurnBluetoothText"
+            android:textAllCaps="false"  />
+    </LinearLayout>
+</RelativeLayout>

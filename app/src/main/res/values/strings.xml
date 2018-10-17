@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WorkWithOtherApps</string>
+    <string name="btnTakePhotoText">Take Photo</string>
+    <string name="txtLocationText">Location is on</string>
+    <string name="btnTurnLocationText">Turn On/Off Location</string>
+    <string name="txtWifiText">Wifi is on</string>
+    <string name="btnTurnWifiText">Turn On/Off Wifi</string>
+    <string name="txtBluetoothText">Bluetooth is on</string>
+    <string name="btnTurnBluetoothText">Turn On/Off Bluetooth</string>
+</resources>
